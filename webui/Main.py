@@ -743,7 +743,11 @@ def tr(key):
         return value
     # 新功能优先维护中英文。其它语言缺少单项翻译时统一回退英文，避免在多个
     # locale 中复制相同英文后长期失去同步；英文也没有该键时才显示原始 key。
-    return locales.get("en", {}).get("Translation", {}).get(key, key)
+    # 由于本地界面已切到葡萄牙语，缺失文本会优先回退到葡萄牙语文件，再回退英文。
+    return (
+        locales.get("pt", {}).get("Translation", {}).get(key)
+        or locales.get("en", {}).get("Translation", {}).get(key, key)
+    )
 
 
 # -----------------------------------------------------------------------------
@@ -1739,13 +1743,13 @@ def _render_top_bar():
                     selected_index = i
 
             selected_language_code = st.selectbox(
-                "Language / 语言",
+                "Language / 语言 / Português",
                 options=language_codes,
                 index=selected_index,
                 format_func=lambda code: locales[code].get("Language", code),
                 key="top_language_code_selector",
                 label_visibility="collapsed",
-                width=180,
+                width=210,
             )
             if selected_language_code:
                 previous_language = st.session_state.get("ui_language", "")

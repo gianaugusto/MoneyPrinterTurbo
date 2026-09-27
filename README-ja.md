@@ -2,9 +2,9 @@
 
 # MoneyPrinterTurbo 💸
 
-### オールインワン AI ショート動画生成ツール
+### Gerador de vídeos curtos com IA tudo-em-um
 
-動画の<b>テーマ</b>または<b>キーワード</b>を指定するだけで、MoneyPrinterTurbo が台本の生成、素材のマッチング、字幕と BGM の作成を行い、高画質のショート動画を出力します。
+Basta fornecer o <b>tema</b> ou <b>palavra-chave</b> do vídeo para que o MoneyPrinterTurbo gere roteiro, combine materiais, crie legendas e trilha sonora e produza um vídeo curto em alta definição.
 
 [![Version](https://img.shields.io/github/v/release/harry0703/MoneyPrinterTurbo?color=blue&label=version)](https://github.com/harry0703/MoneyPrinterTurbo/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/harry0703/MoneyPrinterTurbo/releases/latest)

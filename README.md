@@ -2,9 +2,9 @@
 
 # MoneyPrinterTurbo 💸
 
-### 一站式 AI 短视频生成工具
+### Gerador de vídeos curtos com IA tudo-em-um
 
-只需提供视频<b>主题</b>或<b>关键词</b>，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。
+Basta fornecer o <b>tema</b> ou <b>palavra-chave</b> do vídeo para que o MoneyPrinterTurbo gere o roteiro, encontre os clipes, crie legendas e trilha sonora e produza um vídeo curto em alta definição.
 
 [![Version](https://img.shields.io/github/v/release/harry0703/MoneyPrinterTurbo?color=blue&label=version)](https://github.com/harry0703/MoneyPrinterTurbo/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/harry0703/MoneyPrinterTurbo/releases/latest)
@@ -14,11 +14,11 @@
 <a href="https://trendshift.io/repositories/8731" target="_blank"><img src="https://trendshift.io/api/badge/repositories/8731" alt="harry0703%2FMoneyPrinterTurbo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 <a href="https://www.star-history.com/harry0703/moneyprinterturbo"><img src="https://api.star-history.com/badge?repo=harry0703/MoneyPrinterTurbo" alt="Star History Rank" style="height: 55px;" height="55"/></a>
 
-简体中文 | [English](README-en.md) | [日本語](README-ja.md) | [版本发布](https://github.com/harry0703/MoneyPrinterTurbo/releases) | [问题反馈](https://github.com/harry0703/MoneyPrinterTurbo/issues)
+Português | [English](README-en.md) | [日本語](README-ja.md) | [Versões](https://github.com/harry0703/MoneyPrinterTurbo/releases) | [Problemas](https://github.com/harry0703/MoneyPrinterTurbo/issues)
 
 </div>
 
-## 界面预览 🖥️
+## Visão da interface 🖥️
 
 <h4 align="center">WebUI</h4>
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 特别感谢 ❤️
+## Agradecimentos especiais ❤️
 
 <div align="center">
   <a href="https://platform.kimi.com?track_id=track-2f5441d6ffd84c509dd079d78e9db5dc&aff=moneyprinterturbo" target="_blank"><img src="https://gcdn.moonshot.cn/growth-cdn/sponsor/kimi-zh.png" alt="Kimi 赞助 MoneyPrinterTurbo" width="100%"></a>

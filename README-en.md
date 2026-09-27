@@ -2,9 +2,9 @@
 
 # MoneyPrinterTurbo 💸
 
-### An All-in-One AI Short Video Generator
+### Gerador de vídeos curtos com IA tudo-em-um
 
-Provide a video <b>topic</b> or <b>keyword</b>, and MoneyPrinterTurbo will generate the script, match footage, create subtitles and background music, and produce an HD short video.
+Basta fornecer o <b>tema</b> ou <b>palavra-chave</b> do vídeo e o MoneyPrinterTurbo irá gerar o roteiro, encontrar os clipes, criar legendas e trilha sonora e produzir um vídeo curto em alta definição.
 
 [![Version](https://img.shields.io/github/v/release/harry0703/MoneyPrinterTurbo?color=blue&label=version)](https://github.com/harry0703/MoneyPrinterTurbo/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/harry0703/MoneyPrinterTurbo/releases/latest)

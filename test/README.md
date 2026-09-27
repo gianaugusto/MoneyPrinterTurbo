@@ -1,55 +1,52 @@
-# MoneyPrinterTurbo Test Directory
+# Diretório de Testes do MoneyPrinterTurbo
 
-This directory contains unit tests for the **MoneyPrinterTurbo** project.
+Este diretório contém testes unitários para o projeto **MoneyPrinterTurbo**.
 
-## Directory Structure
+## Estrutura de Diretórios
 
-- `services/`: Domain-focused unit and controller tests
-  - `test_task.py`: Task pipeline tests
-  - `test_task_manager.py`: In-memory and Redis queue tests
-  - `test_controller_*.py`: API controller tests split by controller domain
-  - `test_video.py`, `test_voice.py`: Media service tests
-- `test_main.py`: Application entry-point test
+- `services/`: testes unitários e de controlador por domínio
+  - `test_task.py`: testes do pipeline de tarefas
+  - `test_task_manager.py`: testes da fila em memória e Redis
+  - `test_controller_*.py`: testes de API de controlador divididos por domínio
+  - `test_video.py`, `test_voice.py`: testes de serviços de mídia
+- `test_main.py`: teste do ponto de entrada da aplicação
 
-## Running Tests
+## Executando Testes
 
-The CI suite uses pytest, which also runs the existing `unittest.TestCase`
-tests:
+A suíte de CI usa pytest, que também executa os testes existentes de `unittest.TestCase`:
 
 ```bash
-# Run all tests
+# Executa todos os testes
 uv run python -X utf8 -m pytest -q test
 
-# Run a specific test file
+# Executa um arquivo de teste específico
 uv run python -X utf8 -m pytest -q test/services/test_video.py
 
-# Run a specific test class
+# Executa uma classe de teste específica
 uv run python -X utf8 -m pytest -q test/services/test_video.py::TestVideoService
 
-# Run a specific test method
+# Executa um método de teste específico
 uv run python -X utf8 -m pytest -q test/services/test_video.py::TestVideoService::test_preprocess_video
 ```
 
-To run the same branch coverage check used by CI:
+Para executar a mesma verificação de cobertura de branch usada pela CI:
 
 ```bash
 uv run python -X utf8 -m coverage run -m pytest -q test
 uv run python -m coverage report
 ```
 
-Live provider tests are skipped by default. To run tests that may call external
-TTS or LLM services, set `MPT_RUN_INTEGRATION_TESTS=1` and provide the required
-provider credentials.
+Testes de provedores ao vivo são ignorados por padrão. Para executar testes que possam chamar serviços externos de TTS ou LLM, defina `MPT_RUN_INTEGRATION_TESTS=1` e forneça as credenciais necessárias do provedor.
 
-## Adding New Tests
+## Adicionando Novos Testes
 
-To add tests for other components, follow these guidelines:
+Para adicionar testes para outros componentes, siga estas diretrizes:
 
-1. Name files `test_<domain>.py` and keep each file focused on one domain.
-2. Split broad controller suites into files such as `test_controller_video.py`.
-3. Use either pytest functions or `unittest.TestCase`; pytest collects both.
-4. Name test functions and methods with the `test_` prefix.
+1. Nomeie os arquivos como `test_<dominio>.py` e mantenha cada arquivo focado em um único domínio.
+2. Divida suítes de controladores amplas em arquivos como `test_controller_video.py`.
+3. Use funções pytest ou `unittest.TestCase`; o pytest coleta ambos.
+4. Nomeie funções e métodos de teste com o prefixo `test_`.
 
-## Test Resources
+## Recursos de Teste
 
-Place any resource files required for testing in the `test/resources` directory.
+Coloque qualquer arquivo de recurso necessário para testes no diretório `test/resources`.
